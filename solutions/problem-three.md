@@ -6,7 +6,8 @@ What is the largest prime factor of the given number?
 
 Solution:
 
-```let max = 1, prime = 2;
+```
+let max = 1, prime = 2;
 
 while(prime <= number){
     if(number%prime === 0){
