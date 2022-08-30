@@ -7,18 +7,17 @@ By considering the terms in the Fibonacci sequence whose values do not exceed n,
 
 Solution:
 
-```function fiboEvenSum(n) {
-  let sum = 0, prevnum = 1, nextnum = 2;
-  while(nextnum <= n){
+```
+let sum = 0, prevnum = 1, nextnum = 2;
+while(nextnum <= n){
 
-    if(nextnum%2 === 0){
-      sum += nextnum;
-    }
-
-    nextnum = prevnum + nextnum;
-    prevnum = nextnum - prevnum;
+  if(nextnum%2 === 0){
+    sum += nextnum;
   }
 
-  return sum;
+  nextnum = prevnum + nextnum;
+  prevnum = nextnum - prevnum;
 }
+
+return sum;
 ```
